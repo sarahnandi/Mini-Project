@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.insurance-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.insurance-header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #0056a3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.insurance-header h1 {
+    font-size: 26px;
+}
+
+.insurance-header p {
+    font-size: 18px;
+    color: #cce0f0;
+}
+
+.insurance-options {
+    margin-bottom: 30px;
+}
+
+.insurance-options h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.insurance-plan {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.insurance-plan h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0056a3;
+}
+
+.insurance-plan p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #0056a3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007bdb;
+}
+
+.insurance-claims h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.insurance-claims ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.insurance-claims p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer.insurance-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer.insurance-footer a {
+    color: #0056a3;
+    text-decoration: none;
+}
+
+footer.insurance-footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Bank - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="bank-logo.png" alt="Indian Bank Logo">
+        </div>
+        <div class="bank-name">
+            <h1>Indian Bank</h1>
+        </div>
+        <ul class="nav-links">
+            <li class="contact-item">
+                <a href="#about-us" class="contact-link">Contact</a>
+                <div class="dropdown">
+                    <!-- Number Tooltip -->
+                    <div class="number-container">
+                        <a href="#" class="number">Number</a>
+                        <span class="tooltip-number">022-96512741</span>
+                    </div>
+                    <!-- Address Tooltip -->
+                    <div class="address-container">
+                        <a href="#" class="address">Address</a>
+                        <span class="tooltip-address">Arrey Colony, Goregaon East</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Login Section -->
+    <div class="background">
+        <div class="login-container">
+            <h2>Login to Indian Bank</h2>
+            <form action="login.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="account-number">Account Number</label>
+                <input type="text" id="account-number" name="account-number" placeholder="Enter your account number" required>
+
+                <label for="contact">Mobile Number or Email</label>
+                <input type="text" id="contact" name="contact" placeholder="Enter your mobile number or email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Indian Bank</h2>
+        <p>Indian Bank is a trusted financial institution that offers a range of banking services to its customers...</p>
+    </section>
+
+    <!-- Other Services Section -->
+    <section id="others">
+        <h2>Other Services</h2>
+        <p>Explore our additional services like insurance, loans, and investment plans...</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment - Indian Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="payment-container">
+        <header class="payment-header">
+            <h1>Welcome, Soham Nandi</h1>
+            <p>Online Payment Portal</p>
+        </header>
+
+        <div class="payment-options">
+            <button class="option-btn" onclick="showApology()">Recharge & Bills</button>
+            <button class="option-btn" onclick="showApology()">Pay to Contact</button>
+            <button class="option-btn" onclick="showApology()">Scan & Pay</button>
+            <button class="option-btn" onclick="showApology()">Pay for Services</button>
+        </div>
+
+        <form class="payment-form" onsubmit="handleSubmit(event)">
+            <h2>Make a Payment</h2>
+            <label for="account-number">Account Number</label>
+            <input type="text" id="account-number" name="account-number" placeholder="Enter your account number" required>
+
+            <label for="payment-amount">Amount (₹)</label>
+            <input type="number" id="payment-amount" name="payment-amount" placeholder="Enter amount" required>
+
+            <label for="payment-description">Description</label>
+            <input type="text" id="payment-description" name="payment-description" placeholder="Enter payment description" required>
+
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="" disabled selected>Select a payment method</option>
+                <option value="upi">UPI</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="net-banking">Net Banking</option>
+            </select>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="confirm-payment" name="confirm-payment" required>
+                <label for="confirm-payment">I confirm the details are correct.</label>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+
+        <footer class="payment-footer">
+            <a href="user_profile.html">Back to Dashboard</a>
+        </footer>
+    </div>
+
+    <script>
+        function showApology() {
+            alert('Sorry, this feature is currently not responsive. Please try again later.');
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Payment Successful!');
+        }
+    </script>
+</body>
+</html>

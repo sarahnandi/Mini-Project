@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Banking - Indian Bank</title>
+    <link rel="stylesheet" href="net_banking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="netbanking-container">
+        <header class="netbanking-header">
+            <h1>Indian Bank - Net Banking</h1>
+            <p>Access your banking services securely and quickly.</p>
+        </header>
+
+        <form class="netbanking-form" onsubmit="handleLogin(event)">
+            <h2>Login to Net Banking</h2>
+            <label for="net-account-number">Account Number</label>
+            <input type="text" id="net-account-number" name="net-account-number" placeholder="Enter your account number" required>
+
+            <label for="net-password">Password</label>
+            <input type="password" id="net-password" name="net-password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <section class="transfer-options">
+            <h2>Transfer Money</h2>
+            <p>Select a transfer mode and fill out the required details:</p>
+
+            <div class="transfer-buttons">
+                <button class="transfer-btn" onclick="showApology('NEFT')">NEFT</button>
+                <button class="transfer-btn" onclick="showApology('RTGS')">RTGS</button>
+                <button class="transfer-btn" onclick="showApology('IMPS')">IMPS</button>
+                <button class="transfer-btn" onclick="showApology('UPI Transfer')">UPI Transfer</button>
+            </div>
+
+            <form class="transfer-form">
+                <label for="transfer-amount">Amount (₹)</label>
+                <input type="number" id="transfer-amount" name="transfer-amount" placeholder="Enter amount" required>
+
+                <label for="beneficiary-account">Beneficiary Account Number</label>
+                <input type="text" id="beneficiary-account" name="beneficiary-account" placeholder="Enter beneficiary account number" required>
+
+                <label for="transfer-mode">Transfer Mode</label>
+                <select id="transfer-mode" name="transfer-mode" required>
+                    <option value="" disabled selected>Select a transfer mode</option>
+                    <option value="neft">NEFT</option>
+                    <option value="rtgs">RTGS</option>
+                    <option value="imps">IMPS</option>
+                    <option value="upi">UPI</option>
+                </select>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="confirm-transfer" name="confirm-transfer" required>
+                    <label for="confirm-transfer">I confirm the details are correct.</label>
+                </div>
+
+                <button type="submit">Transfer Now</button>
+            </form>
+        </section>
+
+        <footer class="netbanking-footer">
+            <a href="user_profile.html">Back to Dashboard</a>
+        </footer>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Login Successful!');
+        }
+
+        function showApology(mode) {
+            alert(`Sorry, the ${mode} service is currently not responsive. Please try again later.`);
+        }
+    </script>
+</body>
+</html>

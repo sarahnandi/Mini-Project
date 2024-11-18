@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0056a3;
+    padding: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.bank-name h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+
+.contact-item {
+    position: relative; right:40px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #c8cc9e;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    top: 100%;
+}
+
+.contact-item:hover .dropdown {
+    display: block;
+}
+
+/* Tooltip Styling */
+.number-container,
+.address-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.tooltip-number,
+.tooltip-address {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #f4d7d7;
+    color: #d8e5ab;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    white-space: nowrap;
+    text-align: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+/* Show tooltips on hover */
+.contact-link:hover ~ .dropdown .tooltip-number,
+.contact-link:hover ~ .dropdown .tooltip-address,
+.number-container:hover .tooltip-number,
+.address-container:hover .tooltip-address {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Login Section Styling */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-container {
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #007bdb;
+}
+
+/* About Us & Other Services Styling */
+section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #0056a3;
+}
+
+/* Specific Styling for "Other Services" */
+#others {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#others p {
+    font-size: 18px;
+    line-height: 1.6;
+}

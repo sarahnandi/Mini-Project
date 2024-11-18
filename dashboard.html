@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Indian Bank</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <nav class="sidebar">
+            <h2>Indian Bank</h2>
+            <ul>
+                <li><a href="#overview">Account Overview</a></li>
+                <li><a href="#transactions">Transaction History</a></li>
+                <li><a href="#filters">Transaction Filters</a></li>
+                <li><a href="#monthly-summary">Monthly Spend Summary</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="user_profile.html">Logout</a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="main-content">
+            <header class="dashboard-header">
+                <h1>Welcome, Soham Nandi</h1>
+                <p>Account Number: 1234565789</p>
+                <p>Email/Phone: nandisoham016@gmail.com</p>
+                <p class="balance">Balance: ₹50,000.00</p>
+            </header>
+
+            
+            <section id="overview" class="overview">
+                <div class="card">
+                    <h2>Available Balance</h2>
+                    <p class="balance-amount">₹50,000.00</p>
+                    <button class="btn-primary">Request Statement</button>
+                </div>
+            </section>
+
+            
+            <section id="transactions" class="transactions">
+                <h2>Recent Transactions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-10-01</td>
+                            <td>Deposit</td>
+                            <td class="credit">+ ₹5,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>2024-10-05</td>
+                            <td>Withdrawal</td>
+                            <td class="debit">- ₹2,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>2024-10-07</td>
+                            <td>Transfer</td>
+                            <td class="debit">- ₹1,500.00</td>
+                        </tr>
+                        <tr>
+                            <td>2024-10-10</td>
+                            <td>Bill Payment</td>
+                            <td class="debit">- ₹2,500.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            
+            <section id="filters" class="filters">
+                <h2>Filter Transactions</h2>
+                <form action="#">
+                    <div class="filter-group">
+                        <label for="filter-date">By Date:</label>
+                        <input type="date" id="filter-date">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-type">By Type:</label>
+                        <select id="filter-type">
+                            <option value="all">All</option>
+                            <option value="deposit">Deposit</option>
+                            <option value="withdrawal">Withdrawal</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="bill">Bill Payment</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-amount">By Amount (₹):</label>
+                        <input type="number" id="filter-amount" placeholder="Enter minimum amount">
+                    </div>
+                    <button class="btn-primary">Apply Filters</button>
+                </form>
+            </section>
+
+            
+            <section id="monthly-summary" class="monthly-summary">
+                <h2>Monthly Spend Summary - October 2024</h2>
+                <div class="summary-content">
+                    <div class="summary-card">
+                        <h3>Total Deposits</h3>
+                        <p class="summary-amount credit">₹15,000.00</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Total Withdrawals</h3>
+                        <p class="summary-amount debit">₹6,000.00</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Net Change</h3>
+                        <p class="summary-amount balance-change">+ ₹9,000.00</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Services - Indian Bank</title>
+    <link rel="stylesheet" href="insurance.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="insurance-container">
+        <header class="insurance-header">
+            <h1>Indian Bank - Insurance Services</h1>
+            <p>Protect what matters most with our comprehensive insurance plans.</p>
+        </header>
+
+        <section class="insurance-options">
+            <h2>Our Insurance Plans</h2>
+            <div class="insurance-plan">
+                <h3>Health Insurance</h3>
+                <p>Secure your and your family’s health with our health insurance coverage. It includes hospitalization, surgery, and preventive care.</p>
+                <button onclick="showApology('Health Insurance')">Buy Now</button>
+                <button onclick="showApology('Health Insurance Policy')">View Details</button>
+            </div>
+
+            <div class="insurance-plan">
+                <h3>Life Insurance</h3>
+                <p>Ensure financial security for your loved ones in case of an unfortunate event. Get comprehensive life insurance plans.</p>
+                <button onclick="showApology('Life Insurance')">Buy Now</button>
+                <button onclick="showApology('Life Insurance Policy')">View Details</button>
+            </div>
+
+            <div class="insurance-plan">
+                <h3>Car Insurance</h3>
+                <p>Cover your vehicle against accidents, theft, and natural disasters with our car insurance plans.</p>
+                <button onclick="showApology('Car Insurance')">Buy Now</button>
+                <button onclick="showApology('Car Insurance Policy')">View Details</button>
+            </div>
+
+            <div class="insurance-plan">
+                <h3>Homeowner’s Insurance</h3>
+                <p>Protect your home and belongings from damage caused by natural disasters, accidents, and more.</p>
+                <button onclick="showApology('Home Insurance')">Buy Now</button>
+                <button onclick="showApology('Home Insurance Policy')">View Details</button>
+            </div>
+
+            <div class="insurance-plan">
+                <h3>Disability Insurance</h3>
+                <p>Receive financial support in case of a disability that prevents you from working.</p>
+                <button onclick="showApology('Disability Insurance')">Buy Now</button>
+                <button onclick="showApology('Disability Insurance Policy')">View Details</button>
+            </div>
+
+            <div class="insurance-plan">
+                <h3>Long-Term Care Insurance</h3>
+                <p>Get coverage for extended medical care, nursing facilities, and personal care in your old age.</p>
+                <button onclick="showApology('Long-Term Care Insurance')">Buy Now</button>
+                <button onclick="showApology('Long-Term Care Insurance Policy')">View Details</button>
+            </div>
+        </section>
+
+        <section class="insurance-claims">
+            <h2>Insurance Claims</h2>
+            <p>If you need to file a claim, follow the steps below:</p>
+            <ol>
+                <li>Visit our <a href="#">Claims Page</a>.</li>
+                <li>Fill in the claim form with accurate details.</li>
+                <li>Submit the necessary documents and wait for our response.</li>
+            </ol>
+            <p>For urgent assistance, please contact our support team at <strong>1800-123-4567</strong>.</p>
+        </section>
+
+        <footer class="insurance-footer">
+            <a href="user_profile.html">Back to Dashboard</a>
+        </footer>
+    </div>
+
+    <script>
+        function showApology(service) {
+            alert(`Sorry, the ${service} feature is currently not available. Please try again later.`);
+        }
+    </script>
+</body>
+</html>
